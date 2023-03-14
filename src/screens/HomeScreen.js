@@ -29,7 +29,7 @@ function HomeScreen() {
         <TitleSection text="TUS PUNTOS" />
         <TotalBox points={points} />
         <TitleSection text="tus movimientos" />
-        <MovTable />
+        <MovTable movements={movements} />
       </View>
     </ScrollView>
   );
