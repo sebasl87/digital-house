@@ -3,7 +3,7 @@ import { View, Text, ScrollView } from "react-native";
 import mainContext from "../../context/mainContext";
 
 import { styles } from "../../styles";
-import { TitleSection, TotalBox } from "../components";
+import { TitleSection, TotalBox, MovTable } from "../components";
 
 function HomeScreen() {
   const { movements, points } = useContext(mainContext);
@@ -29,6 +29,7 @@ function HomeScreen() {
         <TitleSection text="TUS PUNTOS" />
         <TotalBox points={points} />
         <TitleSection text="tus movimientos" />
+        <MovTable />
       </View>
     </ScrollView>
   );

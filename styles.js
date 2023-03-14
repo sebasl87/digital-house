@@ -42,7 +42,7 @@ export const styles = StyleSheet.create({
     fontWeight: "800",
     lineHeight: 22,
   },
-  totalBlueBox:{
+  totalBlueBox: {
     color: "#FFF",
     fontFamily: "Avenir",
     fontSize: 32,
@@ -50,6 +50,31 @@ export const styles = StyleSheet.create({
     fontWeight: "800",
     lineHeight: 44,
     marginTop: 7,
-    textAlign: "center"
+    textAlign: "center",
   },
+  table: {
+    backgroundColor: "#FFF",
+    borderRadius: 10,
+    height: 350,
+    paddingBottom: 20,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 23,
+    width: "100%",
+  },
+  rowTable: {
+    width: "100%",
+    flexDirection: "row",
+  },
+  dateText: {
+    color: "#000",
+    fontFamily: "Avenir",
+    fontSize: 12,
+    fontStyle: "normal",
+    fontWeight: "400",
+    lineHeight: 16,
+  },
+  points:{
+    justifyContent: "center",
+  }
 });
