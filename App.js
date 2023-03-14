@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeScreen } from "./src/screens";
 import { useFonts } from "expo-font";
-import getTotal from "./src/utils";
+import { getTotal } from "./src/utils";
 
 import { BASE_URL } from "@env";
 

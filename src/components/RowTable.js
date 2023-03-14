@@ -2,9 +2,9 @@ import React from "react";
 import { View, Text, Image } from "react-native";
 
 import { styles } from "../../styles";
+import { formatDate } from "../utils";
 
-const RowTable = ({ product, date, points, isRedemption }) => {
-
+const RowTable = ({ product, points, isRedemption, date }) => {
   return (
     <View style={styles.rowTable}>
       <Image
@@ -18,7 +18,7 @@ const RowTable = ({ product, date, points, isRedemption }) => {
           {product}
         </Text>
         <Text style={[styles.dateText, { marginTop: 2 }]}>
-          26 de enero, 2019
+          {formatDate(date)}
         </Text>
       </View>
       <View
