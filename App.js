@@ -11,7 +11,6 @@ import { styles } from "./styles";
 
 import mainContext from "./context/mainContext";
 
-
 export default function App() {
   const Stack = createNativeStackNavigator();
 
@@ -38,7 +37,7 @@ export default function App() {
   }
 
   return (
-    <mainContext.Provider value={{ movements, points, styles}}>
+    <mainContext.Provider value={{ movements, points, styles }}>
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="Home"
@@ -53,27 +52,24 @@ export default function App() {
             <Stack.Screen
               name="Product"
               component={ProductDetail}
-              options={
-                (({ route }) => ({ title: route.params.name }),
-                {
-                  header: (props) => (
-                    <View style={{ height: 150, backgroundColor: "#CFD6FF" }}>
-                      <HeaderTitle
-                        style={{
-                          bottom: 0,
-                          flex: 1,
-                          height: "100%",
-                          marginBottom: 24,
-                          marginLeft: 20,
-                          marginTop: 102,
-                        }}
-                      >
-                        {props.name}
-                      </HeaderTitle>
-                    </View>
-                  ),
-                })
-              }
+              options={{
+                header: (props) => (
+                  <View style={{ height: 150, backgroundColor: "#CFD6FF" }}>
+                    <HeaderTitle
+                      style={{
+                        bottom: 0,
+                        flex: 1,
+                        height: "100%",
+                        marginBottom: 24,
+                        marginLeft: 20,
+                        marginTop: 102,
+                      }}
+                    >
+                      {props.route.params.product}
+                    </HeaderTitle>
+                  </View>
+                ),
+              }}
             />
           </Stack.Group>
         </Stack.Navigator>
