@@ -7,13 +7,17 @@ const TotalBox = ({ points }) => {
   return (
     <View
       style={{
-        marginHorizontal: 54,
+        alignItems: "center",
         width: "100%",
       }}
     >
       <View style={styles.blueBox}>
         <Text style={styles.monthBlueBox}>Diciembre</Text>
-        <Text style={styles.totalBlueBox}>{points && points.toString()}.00 pts</Text>
+        <View style={styles.totalContainerBox}>
+          <Text style={styles.totalBlueBox}>
+            {points && points.toString()}.00 pts
+          </Text>
+        </View>
       </View>
     </View>
   );

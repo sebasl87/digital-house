@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, Platform } from "react-native";
 import mainContext from "../../context/mainContext";
 
 import { TitleSection, TotalBox, MovTable } from "../components";
@@ -9,7 +9,7 @@ function HomeScreen() {
   return (
     <ScrollView
       contentContainerStyle={{
-        paddingVertical: 60,
+        paddingVertical: Platform.OS === "ios" ? 60 : 10,
       }}
     >
       <View
@@ -18,9 +18,10 @@ function HomeScreen() {
           alignItems: "flex-start",
           justifyContent: "center",
           padding: 20,
+          width: "100%",
         }}
       >
-        <View>
+        <View style={{width:"100%", alignItems:"flex-start"}}>
           <Text style={styles.titleWelcomme}>Bienvenido de vuelta!</Text>
           <Text>Ruben Rodriguez</Text>
         </View>
