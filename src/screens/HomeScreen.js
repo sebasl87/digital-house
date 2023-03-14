@@ -19,15 +19,16 @@ function HomeScreen() {
           alignItems: "flex-start",
           justifyContent: "center",
           padding: 20,
+          width: "100%",
         }}
       >
-        <View>
+        <View style={{width:"100%", alignItems:"flex-start"}}>
           <Text style={styles.titleWelcomme}>Bienvenido de vuelta!</Text>
           <Text>Ruben Rodriguez</Text>
         </View>
         <TitleSection text="TUS PUNTOS" />
         <TotalBox points={points} />
-        <TitleSection text="tus movimientos" />
+        <TitleSection text="TUS MOVIMIENTOS" />
         <MovTable movements={movements} />
       </View>
     </ScrollView>
