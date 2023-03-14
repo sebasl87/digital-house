@@ -28,6 +28,7 @@ export const styles = StyleSheet.create({
     borderRadius: 20,
     height: 143,
     paddingLeft: 18,
+    paddingRight: 18,
     paddingTop: 21,
     shadowOffset: { height: 6 },
     shadowOpacity: 0.5,
@@ -42,7 +43,7 @@ export const styles = StyleSheet.create({
     fontWeight: "800",
     lineHeight: 22,
   },
-  totalBlueBox:{
+  totalBlueBox: {
     color: "#FFF",
     fontFamily: "Avenir",
     fontSize: 32,
@@ -50,6 +51,47 @@ export const styles = StyleSheet.create({
     fontWeight: "800",
     lineHeight: 44,
     marginTop: 7,
-    textAlign: "center"
+    textAlign: "center",
+    justifyContent: "center",
+    width: "100%",
+  },
+  totalContainerBox: {
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "flex-start",
+  },
+  table: {
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    maxHeight: 350,
+    paddingBottom: 20,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 20,
+    width: "100%",
+  },
+  rowTable: {
+    width: "100%",
+    flexDirection: "row",
+    marginBottom: 8,
+    justifyContent: "space-between",
+  },
+  dateText: {
+    color: "#000",
+    fontFamily: "Avenir",
+    fontSize: 12,
+    fontStyle: "normal",
+    fontWeight: "400",
+    lineHeight: 16,
+  },
+  points: {
+    justifyContent: "center",
+  },
+  containerRowData: {
+    alignItems: "center",
+    flexDirection: "row",
+    width: "100%",
+    maxWidth: 60,
+    justifyContent: "flex-end",
   },
 });

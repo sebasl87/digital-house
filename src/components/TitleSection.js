@@ -5,7 +5,9 @@ import { styles } from "../../styles";
 
 const TitleSection = ({ text }) => {
   return (
-    <View style={{ marginVertical: 20 }}>
+    <View
+      style={{ marginVertical: 20, alignItems: "flex-start", width: "100%" }}
+    >
       <Text style={styles.titleSection}>{text}</Text>
     </View>
   );

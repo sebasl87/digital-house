@@ -1,4 +1,6 @@
-const getTotal = (arr) => {
+import { MONTHS } from "../constants";
+
+export const getTotal = (arr) => {
   const sum = arr
     .filter((mov) => mov.is_redemption)
     .reduce(function (prev, current) {
@@ -13,5 +15,15 @@ const getTotal = (arr) => {
   return result;
 };
 
-export default getTotal;
+export const formatDate = (fecha) => {
+  const date = new Date(fecha);
 
+  const dateFormat =
+    date.getDay() +
+    " de " +
+    MONTHS[date.getMonth()] +
+    ", " +
+    date.getFullYear();
+
+  return dateFormat;
+};
