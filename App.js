@@ -5,7 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeScreen } from "./src/screens";
 import { useFonts } from "expo-font";
 import { getTotal } from "./src/utils";
-
+import { HeaderTitle } from "@react-navigation/elements";
 import { BASE_URL } from "@env";
 
 import mainContext from "./context/mainContext";
@@ -46,8 +46,8 @@ export default function App() {
     <mainContext.Provider value={{ movements, points }}>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="Home"
-          options={{ headerShown: false }}
+          initialRouteName="Product"
+          // options={{ headerShown: false }}
         >
           <Stack.Group>
             <Stack.Screen
@@ -58,7 +58,27 @@ export default function App() {
             <Stack.Screen
               name="Product"
               component={NewProduct}
-              options={{ headerShown: false }}
+              options={
+                (({ route }) => ({ title: route.params.name }),
+                {
+                  header: (props) => (
+                    <View style={{ height: 150, backgroundColor: "#CFD6FF" }}>
+                      <HeaderTitle
+                        style={{
+                          bottom: 0,
+                          flex: 1,
+                          height: "100%",
+                          marginBottom: 24,
+                          marginLeft: 20,
+                          marginTop: 102,
+                        }}
+                      >
+                        {props.name}
+                      </HeaderTitle>
+                    </View>
+                  ),
+                })
+              }
             />
           </Stack.Group>
         </Stack.Navigator>
