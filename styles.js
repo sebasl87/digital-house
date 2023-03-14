@@ -61,18 +61,20 @@ export const styles = StyleSheet.create({
     alignItems: "flex-start",
   },
   table: {
-    backgroundColor: "#FFF",
+    backgroundColor: "#fff",
     borderRadius: 10,
-    height: 350,
+    maxHeight: 350,
     paddingBottom: 20,
     paddingLeft: 10,
     paddingRight: 10,
-    paddingTop: 23,
+    paddingTop: 20,
     width: "100%",
   },
   rowTable: {
     width: "100%",
     flexDirection: "row",
+    marginBottom: 8,
+    justifyContent: "space-between",
   },
   dateText: {
     color: "#000",
@@ -84,5 +86,12 @@ export const styles = StyleSheet.create({
   },
   points: {
     justifyContent: "center",
+  },
+  containerRowData: {
+    alignItems: "center",
+    flexDirection: "row",
+    width: "100%",
+    maxWidth: 60,
+    justifyContent: "flex-end",
   },
 });

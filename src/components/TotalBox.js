@@ -7,7 +7,7 @@ const TotalBox = ({ points }) => {
   return (
     <View
       style={{
-        marginHorizontal: 54,
+        alignItems: "center",
         width: "100%",
       }}
     >
