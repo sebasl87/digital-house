@@ -25,7 +25,7 @@ const RowTable = ({ product, points, isRedemption, date, image }) => {
           source={{ uri: image }}
           style={{ width: 55, height: 55, borderRadius: 10 }}
         />
-        <View style={{ marginLeft: 12, marginRight: 80 }}>
+        <View style={{ marginLeft: 12, width: 200 }}>
           <Text
             style={[styles.titleSection, { color: "#000", marginVertical: 5 }]}
           >
@@ -47,15 +47,16 @@ const RowTable = ({ product, points, isRedemption, date, image }) => {
             <Text style={[styles.monthBlueBox, { color: "#00B833" }]}>+</Text>
           )}
           <Text style={[styles.monthBlueBox, { color: "#000" }]}>{points}</Text>
-          <Text
-            style={[styles.monthBlueBox, { color: "#000", marginLeft: 20 }]}
-          >
-            &gt;
-          </Text>
+          <View style={{ justifyContent: "center", alignItems: "flex-end" }}>
+            <Text
+              style={[styles.monthBlueBox, { color: "#000", marginLeft: 8 }]}
+            >
+              &gt;
+            </Text>
+          </View>
         </View>
       </View>
     </TouchableOpacity>
-  );
-};
+  );};
 
 export default RowTable;

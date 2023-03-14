@@ -16,8 +16,8 @@ const MovTable = ({ product, points, isRedemption, date }) => {
         style={{ marginBottom: 32 }}
         text={
           isRedemption
-            ? "Con esta compra utilizaste"
-            : "Con esta compra acumulaste"
+            ? "Con esta compra canjeaste:"
+            : "Con esta compra acumulaste:"
         }
       />
       <Text
