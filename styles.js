@@ -87,6 +87,29 @@ export const styles = StyleSheet.create({
   points: {
     justifyContent: "center",
   },
+  containerImg: {
+    alignItems: "center",
+    flex: 1,
+    justifyContent: "center",
+    paddingBottom: 32,
+    shadowOffset: { height: 6 },
+    shadowOpacity: 0.5,
+    shadowRadius: 4,
+    width: "100%",
+  },
+  containerProductInfo: {
+    flex: 1,
+    justifyContent: "center",
+    width: "100%",
+  },
+  button: {
+    alignItems: "center",
+    backgroundColor: "#334FFA",
+    borderRadius: 10,
+    marginTop: 32,
+    paddingVertical: 14,
+    width: "100%",
+  },
   containerRowData: {
     alignItems: "center",
     flexDirection: "row",
