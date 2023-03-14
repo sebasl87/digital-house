@@ -12,8 +12,12 @@ const TotalBox = ({ text }) => {
       }}
     >
       <View style={styles.blueBox}>
-        <Text>Diciembre</Text>
-        <Text>10,000 pts</Text>
+        <Text style={styles.monthBlueBox}>Diciembre</Text>
+        <Text
+          style={styles.totalBlueBox}
+        >
+          10,000.00 pts
+        </Text>
       </View>
     </View>
   );

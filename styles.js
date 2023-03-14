@@ -29,9 +29,27 @@ export const styles = StyleSheet.create({
     height: 143,
     paddingLeft: 18,
     paddingTop: 21,
-    shadowOffset: { width: 0, height: 4 },
+    shadowOffset: { height: 6 },
     shadowOpacity: 0.5,
     shadowRadius: 4,
     width: 286,
+  },
+  monthBlueBox: {
+    color: "#FFF",
+    fontFamily: "Avenir",
+    fontSize: 16,
+    fontStyle: "normal",
+    fontWeight: "800",
+    lineHeight: 22,
+  },
+  totalBlueBox:{
+    color: "#FFF",
+    fontFamily: "Avenir",
+    fontSize: 32,
+    fontStyle: "normal",
+    fontWeight: "800",
+    lineHeight: 44,
+    marginTop: 7,
+    textAlign: "center"
   },
 });
