@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View, Text, ScrollView } from "react-native";
+import mainContext from "../../context/mainContext";
 
 import { styles } from "../../styles";
 import { TitleSection, TotalBox } from "../components";
 
 function HomeScreen() {
+  const { movements, points } = useContext(mainContext);
+  // console.log(points.toLocaleString("en"));
   return (
     <ScrollView
       contentContainerStyle={{
@@ -24,7 +27,7 @@ function HomeScreen() {
           <Text>Ruben Rodriguez</Text>
         </View>
         <TitleSection text="TUS PUNTOS" />
-        <TotalBox />
+        <TotalBox points={points} />
       </View>
     </ScrollView>
   );

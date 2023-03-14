@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 
 import { styles } from "../../styles";
 
-const TotalBox = ({ text }) => {
+const TotalBox = ({ points }) => {
   return (
     <View
       style={{
@@ -13,11 +13,7 @@ const TotalBox = ({ text }) => {
     >
       <View style={styles.blueBox}>
         <Text style={styles.monthBlueBox}>Diciembre</Text>
-        <Text
-          style={styles.totalBlueBox}
-        >
-          10,000.00 pts
-        </Text>
+        <Text style={styles.totalBlueBox}>{points.toString()}.00 pts</Text>
       </View>
     </View>
   );
