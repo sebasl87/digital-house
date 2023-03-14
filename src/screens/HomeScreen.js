@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, Platform } from "react-native";
 import mainContext from "../../context/mainContext";
 
 import { styles } from "../../styles";
@@ -10,7 +10,7 @@ function HomeScreen() {
   return (
     <ScrollView
       contentContainerStyle={{
-        paddingVertical: 60,
+        paddingVertical: Platform.OS === "ios" ? 60 : 10,
       }}
     >
       <View

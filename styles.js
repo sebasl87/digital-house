@@ -28,6 +28,7 @@ export const styles = StyleSheet.create({
     borderRadius: 20,
     height: 143,
     paddingLeft: 18,
+    paddingRight: 18,
     paddingTop: 21,
     shadowOffset: { height: 6 },
     shadowOpacity: 0.5,
@@ -51,6 +52,13 @@ export const styles = StyleSheet.create({
     lineHeight: 44,
     marginTop: 7,
     textAlign: "center",
+    justifyContent: "center",
+    width: "100%",
+  },
+  totalContainerBox: {
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "flex-start",
   },
   table: {
     backgroundColor: "#FFF",
@@ -74,7 +82,7 @@ export const styles = StyleSheet.create({
     fontWeight: "400",
     lineHeight: 16,
   },
-  points:{
+  points: {
     justifyContent: "center",
-  }
+  },
 });
