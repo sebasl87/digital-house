@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, ScrollView } from "react-native";
 
 import { styles } from "../../styles";
-import { TitleSection } from "../components";
+import { TitleSection, TotalBox } from "../components";
 
 function HomeScreen() {
   return (
@@ -24,6 +24,7 @@ function HomeScreen() {
           <Text>Ruben Rodriguez</Text>
         </View>
         <TitleSection text="TUS PUNTOS" />
+        <TotalBox />
       </View>
     </ScrollView>
   );
