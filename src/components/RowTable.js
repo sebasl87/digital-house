@@ -42,9 +42,9 @@ const RowTable = ({ product, points, isRedemption, date, image }) => {
           }}
         >
           {isRedemption ? (
-            <Text style={[styles.monthBlueBox, { color: "#FF0000" }]}>-</Text>
+            <Text style={[styles.monthBlueBox, { color: "#FF0000" }]}>- </Text>
           ) : (
-            <Text style={[styles.monthBlueBox, { color: "#00B833" }]}>+</Text>
+            <Text style={[styles.monthBlueBox, { color: "#00B833" }]}>+ </Text>
           )}
           <Text style={[styles.monthBlueBox, { color: "#000" }]}>{points}</Text>
           <View style={{ justifyContent: "center", alignItems: "flex-end" }}>
