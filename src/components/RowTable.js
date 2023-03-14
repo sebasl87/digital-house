@@ -4,11 +4,11 @@ import { View, Text, Image } from "react-native";
 import { styles } from "../../styles";
 import { formatDate } from "../utils";
 
-const RowTable = ({ product, points, isRedemption, date }) => {
+const RowTable = ({ product, points, isRedemption, date, image }) => {
   return (
     <View style={styles.rowTable}>
       <Image
-        source={{ uri: "https://loremflickr.com/640/480/transport" }}
+        source={{ uri: image }}
         style={{ width: 55, height: 55, borderRadius: 10 }}
       />
       <View style={{ marginLeft: 12, marginRight: 80 }}>
@@ -27,7 +27,11 @@ const RowTable = ({ product, points, isRedemption, date }) => {
           flexDirection: "row",
         }}
       >
-        <Text style={[styles.monthBlueBox, { color: "#00B833" }]}>+</Text>
+        {isRedemption ? (
+          <Text style={[styles.monthBlueBox, { color: "#FF0000" }]}>-</Text>
+        ) : (
+          <Text style={[styles.monthBlueBox, { color: "#00B833" }]}>+</Text>
+        )}
         <Text style={[styles.monthBlueBox, { color: "#000" }]}>{points}</Text>
         <Text style={[styles.monthBlueBox, { color: "#000", marginLeft: 20 }]}>
           &gt;
