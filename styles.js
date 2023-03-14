@@ -87,4 +87,18 @@ export const styles = StyleSheet.create({
     shadowRadius: 4,
     width: "100%",
   },
+  containerProductInfo: {
+    // alignItems: "center",
+    flex: 1,
+    justifyContent: "center",
+    width: "100%",
+  },
+  button: {
+    alignItems: "center",
+    backgroundColor: "#334FFA",
+    borderRadius: 10,
+    marginTop: 32,
+    paddingVertical: 14,
+    width: "100%",
+  },
 });

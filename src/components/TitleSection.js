@@ -6,7 +6,7 @@ import { styles } from "../../styles";
 const TitleSection = ({ text }) => {
   return (
     <View style={{ marginVertical: 20 }}>
-      <Text style={styles.titleSection}>{text.toUpperCase()}</Text>
+      <Text style={styles.titleSection}>{text}</Text>
     </View>
   );
 };

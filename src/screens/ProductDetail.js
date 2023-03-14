@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import { View, Text, ScrollView, Image } from "react-native";
+import { View, ScrollView, Image } from "react-native";
 import mainContext from "../../context/mainContext";
+import { CardDetail } from "../components";
 
 function ProductDetail() {
   const { movements, points, styles } = useContext(mainContext);
@@ -14,9 +15,10 @@ function ProductDetail() {
       <View style={styles.containerImg}>
         <Image
           source={{ uri: "https://loremflickr.com/640/480/city" }}
-          style={{ width: 353, height: 350, borderRadius: 10 }}
+          style={{ width: "100%", height: 350, borderRadius: 10 }}
         />
       </View>
+      <CardDetail />
     </ScrollView>
   );
 }
