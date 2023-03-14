@@ -6,6 +6,8 @@ import { HomeScreen } from "./src/screens";
 import { useFonts } from "expo-font";
 import getTotal from "./src/utils";
 
+import { BASE_URL } from "@env";
+
 import mainContext from "./context/mainContext";
 
 function NewProduct() {
@@ -19,10 +21,9 @@ export default function App() {
   const Stack = createNativeStackNavigator();
 
   const [movements, setMovements] = useState(null);
-  const getUrl = process.env.BASE_URL;
 
   const fetchData = async () => {
-    const res = await fetch(getUrl);
+    const res = await fetch(BASE_URL);
     const data = await res.json();
     setMovements(data);
   };
