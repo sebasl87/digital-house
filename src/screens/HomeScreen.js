@@ -2,15 +2,13 @@ import React from "react";
 import { View, Text, ScrollView } from "react-native";
 
 import { styles } from "../../styles";
+import { TitleSection } from "../components";
 
 function HomeScreen() {
   return (
     <ScrollView
       contentContainerStyle={{
-        flex: 1,
-        width: "100%",
-        height: "100%",
-
+        paddingVertical: 60,
       }}
     >
       <View
@@ -21,13 +19,11 @@ function HomeScreen() {
           padding: 20,
         }}
       >
-        <View style={{ marginTop: 0, height: 220, backgroundColor: "green" }}>
+        <View>
           <Text style={styles.titleWelcomme}>Bienvenido de vuelta!</Text>
           <Text>Ruben Rodriguez</Text>
         </View>
-        <View style={{ marginVertical: 20, backgroundColor: "blue" }}>
-          <Text style={styles.titleSection}>TUS PUNTOS</Text>
-        </View>
+        <TitleSection text="TUS PUNTOS" />
       </View>
     </ScrollView>
   );
