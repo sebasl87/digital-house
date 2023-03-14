@@ -41,8 +41,8 @@ export default function App() {
     <mainContext.Provider value={{ movements, points, styles}}>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="Product"
-          // options={{ headerShown: false }}
+          initialRouteName="Home"
+          options={{ headerShown: false }}
         >
           <Stack.Group>
             <Stack.Screen

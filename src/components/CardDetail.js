@@ -1,19 +1,24 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text } from "react-native";
 
 import { styles } from "../../styles";
+import { formatDate } from "../utils";
 import TitleSection from "./TitleSection";
 
-const MovTable = ({ movements }) => {
+const MovTable = ({ product, points, isRedemption, date }) => {
   return (
     <View style={styles.containerProductInfo}>
       <TitleSection text="Detalles del producto" />
       <Text style={[styles.monthBlueBox, { color: "#000" }]}>
-        Comprado el 26 de enero, 2019
+        Comprado el {formatDate(date)}
       </Text>
       <TitleSection
         style={{ marginBottom: 32 }}
-        text="Con esta compra acumulaste"
+        text={
+          isRedemption
+            ? "Con esta compra utilizaste"
+            : "Con esta compra acumulaste"
+        }
       />
       <Text
         style={[
@@ -21,11 +26,8 @@ const MovTable = ({ movements }) => {
           { color: "#000", fontSize: 24, lineHeight: 33 },
         ]}
       >
-        100 puntos
+        {points} puntos
       </Text>
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.monthBlueBox}>Aceptar</Text>
-      </TouchableOpacity>
     </View>
   );
 };
