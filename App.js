@@ -2,21 +2,16 @@ import React, { useState, useMemo, useEffect } from "react";
 import { Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { HomeScreen } from "./src/screens";
+import { HomeScreen, ProductDetail } from "./src/screens";
 import { useFonts } from "expo-font";
 import { getTotal } from "./src/utils";
 import { HeaderTitle } from "@react-navigation/elements";
 import { BASE_URL } from "@env";
+import { styles } from "./styles";
 
 import mainContext from "./context/mainContext";
 
-function NewProduct() {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>New User Screen</Text>
-    </View>
-  );
-}
+
 export default function App() {
   const Stack = createNativeStackNavigator();
 
@@ -43,7 +38,7 @@ export default function App() {
   }
 
   return (
-    <mainContext.Provider value={{ movements, points }}>
+    <mainContext.Provider value={{ movements, points, styles}}>
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="Product"
@@ -57,7 +52,7 @@ export default function App() {
             />
             <Stack.Screen
               name="Product"
-              component={NewProduct}
+              component={ProductDetail}
               options={
                 (({ route }) => ({ title: route.params.name }),
                 {

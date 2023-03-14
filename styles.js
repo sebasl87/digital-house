@@ -74,7 +74,17 @@ export const styles = StyleSheet.create({
     fontWeight: "400",
     lineHeight: 16,
   },
-  points:{
+  points: {
     justifyContent: "center",
-  }
+  },
+  containerImg: {
+    alignItems: "center",
+    flex: 1,
+    justifyContent: "center",
+    paddingBottom: 32,
+    shadowOffset: { height: 6 },
+    shadowOpacity: 0.5,
+    shadowRadius: 4,
+    width: "100%",
+  },
 });

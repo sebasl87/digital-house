@@ -2,11 +2,10 @@ import React, { useContext } from "react";
 import { View, Text, ScrollView } from "react-native";
 import mainContext from "../../context/mainContext";
 
-import { styles } from "../../styles";
 import { TitleSection, TotalBox, MovTable } from "../components";
 
 function HomeScreen() {
-  const { movements, points } = useContext(mainContext);
+  const { movements, points, styles } = useContext(mainContext);
   return (
     <ScrollView
       contentContainerStyle={{
