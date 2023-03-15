@@ -53,3 +53,10 @@ This site was inspired at Figma to [DIGITAL HOUSE](https://www.figma.com/proto/A
 Sebastian Roger Loguzzo! 🌎
 
 #### 💻 Screenshots
+
+![Screenshot1](./public/screen1.png)
+![Screenshot2](./public/screen2.png)
+![Screenshot3](./public/screen3.png)
+![Screenshot3](./public/screen4.png)
+![Screenshot3](./public/screen5.png)
+![Screenshot3](./public/screen6.png)
