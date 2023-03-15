@@ -8,6 +8,8 @@ This is a [React Native](https://reactnative.dev/) project.
 
 First, after clone this repo, run the development server:
 
+**_NOTE:_** Create file `.env` with data in `.env-example`
+
 ```bash
 npm i
 # and
