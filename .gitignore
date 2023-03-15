@@ -12,7 +12,7 @@ web-build/
 package-lock.*
 
 # testing
-__tests__
+__snapshot__
 /coverage
 
 # macOS

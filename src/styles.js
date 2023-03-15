@@ -1,11 +1,27 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
+  headerTitle: {
+    bottom: 0,
+    color: "#000",
+    flex: 1,
+    fontFamily: "avenir",
+    fontSize: 24,
+    fontStyle: "normal",
+    fontWeight: "800",
+    height: "100%",
+    marginBottom: 24,
+    marginLeft: 20,
+    marginTop: Platform.OS === "ios" ? 102 : 64,
+  },
   container: {
     alignItems: "center",
     backgroundColor: "#fff",
     flex: 1,
     justifyContent: "center",
+  },
+  scrollViewHome: {
+    paddingVertical: Platform.OS === "ios" ? 60 : 10,
   },
   titleWelcomme: {
     color: "#020202",

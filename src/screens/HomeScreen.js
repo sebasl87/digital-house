@@ -16,9 +16,7 @@ function HomeScreen() {
 
   return (
     <ScrollView
-      contentContainerStyle={{
-        paddingVertical: Platform.OS === "ios" ? 60 : 10,
-      }}
+      contentContainerStyle={styles.scrollViewHome}
     >
       <View
         style={{

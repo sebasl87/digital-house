@@ -1,13 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomeScreen screen should render successfully with mock params Android 1`] = `
-<RCTScrollView
-  contentContainerStyle={
-    {
-      "paddingVertical": 10,
-    }
-  }
->
+<RCTScrollView>
   <View>
     <View
       style={
@@ -1017,13 +1011,7 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
 `;
 
 exports[`HomeScreen screen should render successfully with mock params IOS 1`] = `
-<RCTScrollView
-  contentContainerStyle={
-    {
-      "paddingVertical": 10,
-    }
-  }
->
+<RCTScrollView>
   <View>
     <View
       style={

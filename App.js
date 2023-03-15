@@ -63,14 +63,7 @@ export default function App() {
                     }}
                   >
                     <HeaderTitle
-                      style={{
-                        bottom: 0,
-                        flex: 1,
-                        height: "100%",
-                        marginBottom: 24,
-                        marginLeft: 20,
-                        marginTop: Platform.OS === "ios" ? 102 : 68,
-                      }}
+                      style={styles.headerTitle}
                     >
                       {props.route.params.product}
                     </HeaderTitle>
