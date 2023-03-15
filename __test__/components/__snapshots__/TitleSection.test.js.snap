@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render successfully with title_mock 1`] = `
+<View
+  style={
+    {
+      "alignItems": "flex-start",
+      "marginVertical": 20,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#9B9898",
+        "fontFamily": "Avenir",
+        "fontSize": 14,
+        "fontStyle": "normal",
+        "fontWeight": "800",
+        "lineHeight": 19,
+      }
+    }
+  >
+    title_mock
+  </Text>
+</View>
+`;

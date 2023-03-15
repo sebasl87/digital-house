@@ -10,6 +10,7 @@ const RowTable = ({ product, points, isRedemption, date, image }) => {
 
   return (
     <TouchableOpacity
+      testID="touchableProduct"
       onPress={() => {
         navigation.navigate("Product", {
           product,
@@ -57,6 +58,7 @@ const RowTable = ({ product, points, isRedemption, date, image }) => {
         </View>
       </View>
     </TouchableOpacity>
-  );};
+  );
+};
 
 export default RowTable;
