@@ -20,7 +20,7 @@ npm run:android
 npm run test
 ```
 
-#### 💻 Available Scripts
+#### Available Scripts 💻
 
 In the project directory, you can run:
 
@@ -49,16 +49,43 @@ This site was inspired at Figma to [DIGITAL HOUSE](https://www.figma.com/proto/A
 - React Native: [https://reactnative.dev/](https://reactnative.dev/)
 - Postman: [https://www.postman.com/](https://www.postman.com/)
 - Jest: [https://jestjs.io/](https://jestjs.io/)
-- StackOverflow: [https://stackoverflow.com/ 😅](https://stackoverflow.com/ 😅)
+- StackOverflow: [https://stackoverflow.com/](https://stackoverflow.com/) 😅
 - OSX Macbook
 
-Sebastian Roger Loguzzo! 🌎
+#### Cypress 📎
 
-#### 💻 Screenshots
+**_NOTE:_** Project has Cypress to e2e tests. To run pleas follow next steps:
+
+```bash
+# after install dep
+npm run web
+# and in other terminal:
+npx cypress open
+# continue in virtual platform Cypress
+```
+
+#### Select E2E Testing
+
+<img src="./public/screen7.png" alt="" width="800" height="auto">
+
+#### Select Configure, use Chrome and Start E2E
+
+<img src="./public/screen8.png" alt="" width="800" height="auto">
+
+#### In new window opnede click in 'index' and get e2e process
+
+<img src="./public/screen9.png" alt="" width="800" height="auto">
+
+#### Coverage 🔍
+
+![Screenshot6](./public/screen6.png)
+
+#### Screenshots 📱
 
 ![Screenshot1](./public/screen1.png)
 ![Screenshot2](./public/screen2.png)
 ![Screenshot3](./public/screen3.png)
-![Screenshot3](./public/screen4.png)
-![Screenshot3](./public/screen5.png)
-![Screenshot3](./public/screen6.png)
+![Screenshot4](./public/screen4.png)
+![Screenshot5](./public/screen5.png)
+
+Sebastian Roger Loguzzo! 🌎

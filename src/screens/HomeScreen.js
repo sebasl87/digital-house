@@ -59,7 +59,7 @@ function HomeScreen() {
                   setFilterMovs(movements.filter((m) => !m.is_redemption))
                 }
               >
-                <Text style={styles.monthBlueBox}>Ganadados</Text>
+                <Text style={styles.monthBlueBox}>Ganados</Text>
               </TouchableOpacity>
               <TouchableOpacity
                 testID="touchableCanjeados"
