@@ -7,7 +7,7 @@ import { useFonts } from "expo-font";
 import { getTotal } from "./src/utils";
 import { HeaderTitle } from "@react-navigation/elements";
 import { BASE_URL } from "@env";
-import { styles } from "./styles";
+import { styles } from "./src/styles";
 
 import mainContext from "./context/mainContext";
 

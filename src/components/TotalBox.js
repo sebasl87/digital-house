@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, ActivityIndicator } from "react-native";
 
 import { styles } from "../styles";
 
@@ -11,14 +11,18 @@ const TotalBox = ({ points }) => {
         width: "100%",
       }}
     >
-      <View style={styles.blueBox}>
-        <Text style={styles.monthBlueBox}>Diciembre</Text>
-        <View style={styles.totalContainerBox}>
-          <Text style={styles.totalBlueBox}>
-            {points && points.toString()}.00 pts
-          </Text>
+      {points ? (
+        <View style={styles.blueBox}>
+          <Text style={styles.monthBlueBox}>Diciembre</Text>
+          <View style={styles.totalContainerBox}>
+            <Text style={styles.totalBlueBox}>
+              {points && points.toString()}.00 pts
+            </Text>
+          </View>
         </View>
-      </View>
+      ) : (
+        <ActivityIndicator color="#334FFA"/>
+      )}
     </View>
   );
 };

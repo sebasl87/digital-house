@@ -1,5 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TotalBox component should render loader 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "width": "100%",
+    }
+  }
+>
+  <ActivityIndicator
+    color="#334FFA"
+  />
+</View>
+`;
+
 exports[`TotalBox component should render successfully with mock data and isRedemption = true 1`] = `
 <View
   style={
