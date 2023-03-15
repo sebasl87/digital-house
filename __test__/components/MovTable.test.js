@@ -55,4 +55,10 @@ describe("MovTable component", () => {
 
     expect(movTable).toMatchSnapshot();
   });
+
+  it("should render loader", () => {
+    const movTable = renderer.create(<MovTable />).toJSON();
+
+    expect(movTable).toMatchSnapshot();
+  });
 });

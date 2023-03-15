@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, View } from "react-native";
+import { ActivityIndicator, ScrollView, View } from "react-native";
 
 import { styles } from "../styles";
 import RowTable from "./RowTable";
@@ -8,7 +8,7 @@ const MovTable = ({ movements }) => {
   return (
     <View style={styles.table}>
       <ScrollView>
-        {movements &&
+        {movements ? (
           movements.map(
             ({ product, createdAt, points, is_redemption, image, id }) => (
               <RowTable
@@ -20,7 +20,10 @@ const MovTable = ({ movements }) => {
                 product={product}
               />
             )
-          )}
+          )
+        ) : (
+          <ActivityIndicator size="large" color="#334FFA" />
+        )}
       </ScrollView>
     </View>
   );

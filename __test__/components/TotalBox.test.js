@@ -9,4 +9,10 @@ describe("TotalBox component", () => {
 
     expect(totalBox).toMatchSnapshot();
   });
+
+  it("should render loader", () => {
+    const totalBox = renderer.create(<TotalBox />).toJSON();
+
+    expect(totalBox).toMatchSnapshot();
+  });
 });
