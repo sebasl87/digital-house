@@ -117,4 +117,12 @@ export const styles = StyleSheet.create({
     maxWidth: 60,
     justifyContent: "flex-end",
   },
+  buttonSmall: {
+    alignItems: "center",
+    backgroundColor: "#334FFA",
+    borderRadius: 10,
+    marginTop: 32,
+    paddingVertical: 14,
+    width: "48%",
+  },
 });
