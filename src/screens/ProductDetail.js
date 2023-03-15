@@ -31,6 +31,7 @@ function ProductDetail() {
       />
       <TouchableOpacity
         style={styles.button}
+        testID="touchableGoBackTolist"
         onPress={() => {
           navigation.goBack();
         }}

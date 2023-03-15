@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-import { styles } from "../../styles";
+import { styles } from "../styles";
 import { formatDate } from "../utils";
 import TitleSection from "./TitleSection";
 

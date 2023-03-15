@@ -22,7 +22,7 @@ function HomeScreen() {
           width: "100%",
         }}
       >
-        <View style={{width:"100%", alignItems:"flex-start"}}>
+        <View style={{ width: "100%", alignItems: "flex-start" }}>
           <Text style={styles.titleWelcomme}>Bienvenido de vuelta!</Text>
           <Text>Ruben Rodriguez</Text>
         </View>

@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 
-import { styles } from "../../styles";
+import { styles } from "../styles";
 import { formatDate } from "../utils";
 
 const RowTable = ({ product, points, isRedemption, date, image }) => {

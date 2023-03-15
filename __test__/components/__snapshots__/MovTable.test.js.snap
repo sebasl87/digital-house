@@ -121,7 +121,7 @@ exports[`MovTable component should render successfully with mock movements 1`] =
                 ]
               }
             >
-              5 de Noviembre, 2022
+              09 de Diciembre, 2022
             </Text>
           </View>
           <View
@@ -306,7 +306,7 @@ exports[`MovTable component should render successfully with mock movements 1`] =
                 ]
               }
             >
-              5 de Noviembre, 2022
+              09 de Diciembre, 2022
             </Text>
           </View>
           <View
@@ -491,7 +491,7 @@ exports[`MovTable component should render successfully with mock movements 1`] =
                 ]
               }
             >
-              5 de Noviembre, 2022
+              09 de Diciembre, 2022
             </Text>
           </View>
           <View
@@ -676,7 +676,7 @@ exports[`MovTable component should render successfully with mock movements 1`] =
                 ]
               }
             >
-              4 de Noviembre, 2022
+              09 de Diciembre, 2022
             </Text>
           </View>
           <View

@@ -52,7 +52,7 @@ exports[`CardDetail component should render successfully with mock data and isRe
     }
   >
     Comprado el 
-    5 de Noviembre, 2022
+    09 de Diciembre, 2022
   </Text>
   <View
     style={
@@ -155,7 +155,7 @@ exports[`CardDetail component should render successfully with mock data and isRe
     }
   >
     Comprado el 
-    5 de Noviembre, 2022
+    09 de Diciembre, 2022
   </Text>
   <View
     style={
