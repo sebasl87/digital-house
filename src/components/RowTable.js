@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 
-import { styles } from "../../styles";
+import { styles } from "../styles";
 import { formatDate } from "../utils";
 
 const RowTable = ({ product, points, isRedemption, date, image }) => {
@@ -10,6 +10,7 @@ const RowTable = ({ product, points, isRedemption, date, image }) => {
 
   return (
     <TouchableOpacity
+      testID="touchableProduct"
       onPress={() => {
         navigation.navigate("Product", {
           product,
@@ -57,6 +58,7 @@ const RowTable = ({ product, points, isRedemption, date, image }) => {
         </View>
       </View>
     </TouchableOpacity>
-  );};
+  );
+};
 
 export default RowTable;

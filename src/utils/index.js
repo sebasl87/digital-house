@@ -16,14 +16,12 @@ export const getTotal = (arr) => {
 };
 
 export const formatDate = (fecha) => {
-  const date = new Date(fecha);
-
   const dateFormat =
-    date.getDay() +
+    fecha.slice(8, 10) +
     " de " +
-    MONTHS[date.getMonth()] +
+    MONTHS[fecha.slice(5, 7)] +
     ", " +
-    date.getFullYear();
+    fecha.slice(0, 4);
 
   return dateFormat;
 };

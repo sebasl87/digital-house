@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-import { styles } from "../../styles";
+import { styles } from "../styles";
 import { formatDate } from "../utils";
 import TitleSection from "./TitleSection";
 
-const MovTable = ({ product, points, isRedemption, date }) => {
+const CardDetail = ({ points, isRedemption, date }) => {
   return (
     <View style={styles.containerProductInfo}>
       <TitleSection text="Detalles del producto" />
@@ -32,4 +32,4 @@ const MovTable = ({ product, points, isRedemption, date }) => {
   );
 };
 
-export default MovTable;
+export default CardDetail;

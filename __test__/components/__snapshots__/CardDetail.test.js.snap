@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardDetail component should render successfully with mock data and isRedemption = false 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "flex-start",
+        "marginVertical": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#9B9898",
+          "fontFamily": "Avenir",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "800",
+          "lineHeight": 19,
+        }
+      }
+    >
+      Detalles del producto
+    </Text>
+  </View>
+  <Text
+    style={
+      [
+        {
+          "color": "#FFF",
+          "fontFamily": "Avenir",
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "800",
+          "lineHeight": 22,
+        },
+        {
+          "color": "#000",
+        },
+      ]
+    }
+  >
+    Comprado el 
+    09 de Diciembre, 2022
+  </Text>
+  <View
+    style={
+      {
+        "alignItems": "flex-start",
+        "marginVertical": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#9B9898",
+          "fontFamily": "Avenir",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "800",
+          "lineHeight": 19,
+        }
+      }
+    >
+      Con esta compra acumulaste:
+    </Text>
+  </View>
+  <Text
+    style={
+      [
+        {
+          "color": "#FFF",
+          "fontFamily": "Avenir",
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "800",
+          "lineHeight": 22,
+        },
+        {
+          "color": "#000",
+          "fontSize": 24,
+          "lineHeight": 33,
+        },
+      ]
+    }
+  >
+    100
+     puntos
+  </Text>
+</View>
+`;
+
+exports[`CardDetail component should render successfully with mock data and isRedemption = true 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "flex-start",
+        "marginVertical": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#9B9898",
+          "fontFamily": "Avenir",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "800",
+          "lineHeight": 19,
+        }
+      }
+    >
+      Detalles del producto
+    </Text>
+  </View>
+  <Text
+    style={
+      [
+        {
+          "color": "#FFF",
+          "fontFamily": "Avenir",
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "800",
+          "lineHeight": 22,
+        },
+        {
+          "color": "#000",
+        },
+      ]
+    }
+  >
+    Comprado el 
+    09 de Diciembre, 2022
+  </Text>
+  <View
+    style={
+      {
+        "alignItems": "flex-start",
+        "marginVertical": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#9B9898",
+          "fontFamily": "Avenir",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "800",
+          "lineHeight": 19,
+        }
+      }
+    >
+      Con esta compra canjeaste:
+    </Text>
+  </View>
+  <Text
+    style={
+      [
+        {
+          "color": "#FFF",
+          "fontFamily": "Avenir",
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "800",
+          "lineHeight": 22,
+        },
+        {
+          "color": "#000",
+          "fontSize": 24,
+          "lineHeight": 33,
+        },
+      ]
+    }
+  >
+    100
+     puntos
+  </Text>
+</View>
+`;
