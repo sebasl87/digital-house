@@ -2,7 +2,7 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import { RowTable } from "../../src/components";
-import { render, cleanup, fireEvent } from "react-native-testing-library";
+import { render, fireEvent } from "react-native-testing-library";
 
 const mock_movement = {
   createdAt: "2022-12-09T06:34:25.607Z",

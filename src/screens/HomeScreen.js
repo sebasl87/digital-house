@@ -6,6 +6,7 @@ import { TitleSection, TotalBox, MovTable } from "../components";
 
 function HomeScreen() {
   const { movements, points, styles } = useContext(mainContext);
+
   return (
     <ScrollView
       contentContainerStyle={{

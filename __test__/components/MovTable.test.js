@@ -38,10 +38,21 @@ const mock_movements = [
   },
 ];
 
-it("should render successfully with mock movements", () => {
-  const movTable = renderer
-    .create(<MovTable movements={mock_movements} />)
-    .toJSON();
+const mockHistoryPush = jest.fn();
 
-  expect(movTable).toMatchSnapshot();
+jest.mock("@react-navigation/native", () => ({
+  ...jest.requireActual("@react-navigation/native"),
+  useNavigation: () => ({
+    navigate: mockHistoryPush,
+  }),
+}));
+
+describe("MovTable component", () => {
+  it("should render successfully with mock movements", () => {
+    const movTable = renderer
+      .create(<MovTable movements={mock_movements} />)
+      .toJSON();
+
+    expect(movTable).toMatchSnapshot();
+  });
 });
