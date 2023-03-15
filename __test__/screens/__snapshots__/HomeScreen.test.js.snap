@@ -4,7 +4,7 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
 <RCTScrollView
   contentContainerStyle={
     {
-      "paddingVertical": 60,
+      "paddingVertical": 10,
     }
   }
 >
@@ -304,7 +304,7 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
                       ]
                     }
                   >
-                    +
+                    + 
                   </Text>
                   <Text
                     style={
@@ -489,7 +489,7 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
                       ]
                     }
                   >
-                    -
+                    - 
                   </Text>
                   <Text
                     style={
@@ -674,7 +674,7 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
                       ]
                     }
                   >
-                    +
+                    + 
                   </Text>
                   <Text
                     style={
@@ -859,7 +859,7 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
                       ]
                     }
                   >
-                    -
+                    - 
                   </Text>
                   <Text
                     style={
@@ -914,6 +914,102 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
             </View>
           </View>
         </RCTScrollView>
+      </View>
+      <View
+        style={
+          {
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="touchableGanados"
+          >
+            <Text>
+              Ganadados
+            </Text>
+          </View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="touchableCanjeados"
+          >
+            <Text>
+              Canjeados
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
   </View>
@@ -924,7 +1020,7 @@ exports[`HomeScreen screen should render successfully with mock params IOS 1`] =
 <RCTScrollView
   contentContainerStyle={
     {
-      "paddingVertical": 60,
+      "paddingVertical": 10,
     }
   }
 >
@@ -1224,7 +1320,7 @@ exports[`HomeScreen screen should render successfully with mock params IOS 1`] =
                       ]
                     }
                   >
-                    +
+                    + 
                   </Text>
                   <Text
                     style={
@@ -1409,7 +1505,7 @@ exports[`HomeScreen screen should render successfully with mock params IOS 1`] =
                       ]
                     }
                   >
-                    -
+                    - 
                   </Text>
                   <Text
                     style={
@@ -1594,7 +1690,7 @@ exports[`HomeScreen screen should render successfully with mock params IOS 1`] =
                       ]
                     }
                   >
-                    +
+                    + 
                   </Text>
                   <Text
                     style={
@@ -1779,7 +1875,7 @@ exports[`HomeScreen screen should render successfully with mock params IOS 1`] =
                       ]
                     }
                   >
-                    -
+                    - 
                   </Text>
                   <Text
                     style={
@@ -1834,6 +1930,102 @@ exports[`HomeScreen screen should render successfully with mock params IOS 1`] =
             </View>
           </View>
         </RCTScrollView>
+      </View>
+      <View
+        style={
+          {
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="touchableGanados"
+          >
+            <Text>
+              Ganadados
+            </Text>
+          </View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="touchableCanjeados"
+          >
+            <Text>
+              Canjeados
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
   </View>

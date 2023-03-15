@@ -1,8 +1,14 @@
 import "react-native";
-import React from "react";
-import renderer from "react-test-renderer";
+import React, { useState as useStateMock } from "react";
+import renderer, { act } from "react-test-renderer";
 import { HomeScreen } from "../../src/screens";
-import { cleanup } from "react-native-testing-library";
+
+import {
+  render,
+  fireEvent,
+  cleanup,
+  waitFor,
+} from "react-native-testing-library";
 
 const mock_movements = [
   {
@@ -38,6 +44,9 @@ const mock_movements = [
     id: "4",
   },
 ];
+const mockButtonGanados = jest.fn();
+const mockButtonCanjeados = jest.fn();
+const mockButtonTodos = jest.fn();
 
 jest.mock("react", () => ({
   ...jest.requireActual("react"),
@@ -46,12 +55,31 @@ jest.mock("react", () => ({
     points: 100000,
     styles: { titleWelcomme: {} },
   }),
+  useState: jest.fn(),
 }));
 
 describe("HomeScreen screen", () => {
+  const setFilterMovs = jest.fn();
+
   afterEach(() => {
     jest.restoreAllMocks();
   });
+
+  beforeEach(() => {
+    useStateMock.mockImplementation((filterMovs) => [
+      filterMovs,
+      setFilterMovs,
+    ]);
+  });
+  it("should render successfully with mock params Android", () => {
+    jest.mock("react-native/Libraries/Utilities/Platform", () => ({
+      OS: "android",
+    }));
+    const homeScreenAndroid = renderer.create(<HomeScreen />).toJSON();
+    expect(homeScreenAndroid).toMatchSnapshot();
+    cleanup();
+  });
+
   it("should render successfully with mock params IOS", () => {
     jest.mock("react-native/Libraries/Utilities/Platform", () => ({
       OS: "ios",
@@ -61,11 +89,29 @@ describe("HomeScreen screen", () => {
     cleanup();
   });
 
-  it("should render successfully with mock params Android", () => {
-    jest.mock("react-native/Libraries/Utilities/Platform", () => ({
-      OS: "android",
-    }));
-    const homeScreenAndroid = renderer.create(<HomeScreen />).toJSON();
-    expect(homeScreenAndroid).toMatchSnapshot();
+  it("should be filter ganados onPress", () => {
+    const { getByTestId } = render(<HomeScreen />);
+    fireEvent.press(getByTestId("touchableGanados"));
+
+    expect(setFilterMovs).toHaveBeenCalled();
+  });
+
+  it("should be filter canjeados onPress", () => {
+    const { getByTestId } = render(<HomeScreen />);
+    fireEvent.press(getByTestId("touchableCanjeados"));
+
+    expect(setFilterMovs).toHaveBeenCalled();
+  });
+
+  it("should be off filters", async () => {
+    useStateMock.mockImplementation((filterMovs = mock_movements) => [
+      filterMovs,
+      setFilterMovs,
+    ]);
+    const { getByTestId } = render(<HomeScreen />);
+
+    fireEvent.press(getByTestId("touchableTodos"));
+
+    expect(setFilterMovs).toHaveBeenCalled();
   });
 });

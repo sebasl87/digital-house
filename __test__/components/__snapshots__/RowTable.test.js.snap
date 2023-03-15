@@ -133,7 +133,7 @@ exports[`RowTable component should render successfully with mock movement 1`] = 
           ]
         }
       >
-        +
+        + 
       </Text>
       <Text
         style={
@@ -321,7 +321,7 @@ exports[`RowTable component should render successfully with mock movement and is
           ]
         }
       >
-        -
+        - 
       </Text>
       <Text
         style={

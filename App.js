@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
-import { Text, View } from "react-native";
+import { Platform, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeScreen, ProductDetail } from "./src/screens";
@@ -10,6 +10,7 @@ import { BASE_URL } from "@env";
 import { styles } from "./src/styles";
 
 import mainContext from "./context/mainContext";
+import { StatusBar } from "expo-status-bar";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -38,6 +39,7 @@ export default function App() {
 
   return (
     <mainContext.Provider value={{ movements, points, styles }}>
+      <StatusBar style="#CFD6FF"></StatusBar>
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="Home"
@@ -54,7 +56,12 @@ export default function App() {
               component={ProductDetail}
               options={{
                 header: (props) => (
-                  <View style={{ height: 150, backgroundColor: "#CFD6FF" }}>
+                  <View
+                    style={{
+                      height: Platform.OS === "ios" ? 150 : 114,
+                      backgroundColor: "#CFD6FF",
+                    }}
+                  >
                     <HeaderTitle
                       style={{
                         bottom: 0,
@@ -62,7 +69,7 @@ export default function App() {
                         height: "100%",
                         marginBottom: 24,
                         marginLeft: 20,
-                        marginTop: 102,
+                        marginTop: Platform.OS === "ios" ? 102 : 68,
                       }}
                     >
                       {props.route.params.product}
