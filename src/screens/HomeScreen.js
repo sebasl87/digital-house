@@ -1,16 +1,23 @@
-import React, { useContext } from "react";
-import { View, Text, ScrollView, Platform } from "react-native";
+import React, { useContext, useState } from "react";
+import {
+  View,
+  Text,
+  ScrollView,
+  Platform,
+  TouchableOpacity,
+} from "react-native";
 import mainContext from "../../context/mainContext";
 
 import { TitleSection, TotalBox, MovTable } from "../components";
 
 function HomeScreen() {
   const { movements, points, styles } = useContext(mainContext);
+  const [filterMovs, setFilterMovs] = useState();
 
   return (
     <ScrollView
       contentContainerStyle={{
-        paddingVertical: Platform.OS === "ios" ? 60 : 10,
+        paddingVertical: Platform.OS === "ios" ? 80 : 10,
       }}
     >
       <View
@@ -29,7 +36,42 @@ function HomeScreen() {
         <TitleSection text="TUS PUNTOS" />
         <TotalBox points={points} />
         <TitleSection text="TUS MOVIMIENTOS" />
-        <MovTable movements={movements} />
+        <MovTable movements={filterMovs || movements} />
+        <View style={{ width: "100%" }}>
+          {filterMovs ? (
+            <TouchableOpacity
+              style={styles.button}
+              onPress={() => setFilterMovs()}
+            >
+              <Text style={styles.monthBlueBox}>Todos</Text>
+            </TouchableOpacity>
+          ) : (
+            <View
+              style={{
+                flexDirection: "row",
+                width: "100%",
+                justifyContent: "space-between",
+              }}
+            >
+              <TouchableOpacity
+                style={styles.buttonSmall}
+                onPress={() =>
+                  setFilterMovs(movements.filter((m) => !m.is_redemption))
+                }
+              >
+                <Text style={styles.monthBlueBox}>Ganadados</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.buttonSmall}
+                onPress={() =>
+                  setFilterMovs(movements.filter((m) => m.is_redemption))
+                }
+              >
+                <Text style={styles.monthBlueBox}>Canjeados</Text>
+              </TouchableOpacity>
+            </View>
+          )}
+        </View>
       </View>
     </ScrollView>
   );
