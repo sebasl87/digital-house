@@ -16,9 +16,7 @@ function HomeScreen() {
 
   return (
     <ScrollView
-      contentContainerStyle={{
-        paddingVertical: Platform.OS === "ios" ? 80 : 10,
-      }}
+      contentContainerStyle={styles.scrollViewHome}
     >
       <View
         style={{
@@ -40,6 +38,7 @@ function HomeScreen() {
         <View style={{ width: "100%" }}>
           {filterMovs ? (
             <TouchableOpacity
+              testID="touchableTodos"
               style={styles.button}
               onPress={() => setFilterMovs()}
             >
@@ -54,6 +53,7 @@ function HomeScreen() {
               }}
             >
               <TouchableOpacity
+                testID="touchableGanados"
                 style={styles.buttonSmall}
                 onPress={() =>
                   setFilterMovs(movements.filter((m) => !m.is_redemption))
@@ -62,6 +62,7 @@ function HomeScreen() {
                 <Text style={styles.monthBlueBox}>Ganadados</Text>
               </TouchableOpacity>
               <TouchableOpacity
+                testID="touchableCanjeados"
                 style={styles.buttonSmall}
                 onPress={() =>
                   setFilterMovs(movements.filter((m) => m.is_redemption))

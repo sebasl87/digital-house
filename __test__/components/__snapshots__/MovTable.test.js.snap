@@ -175,7 +175,7 @@ exports[`MovTable component should render successfully with mock movements 1`] =
                 ]
               }
             >
-              +
+              + 
             </Text>
             <Text
               style={
@@ -360,7 +360,7 @@ exports[`MovTable component should render successfully with mock movements 1`] =
                 ]
               }
             >
-              -
+              - 
             </Text>
             <Text
               style={
@@ -545,7 +545,7 @@ exports[`MovTable component should render successfully with mock movements 1`] =
                 ]
               }
             >
-              +
+              + 
             </Text>
             <Text
               style={
@@ -730,7 +730,7 @@ exports[`MovTable component should render successfully with mock movements 1`] =
                 ]
               }
             >
-              -
+              - 
             </Text>
             <Text
               style={
