@@ -1,5 +1,208 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`RowTable component should render successfully with Image 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "opacity": 1,
+    }
+  }
+  testID="touchableProduct"
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginBottom": 8,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "height": 55,
+          "justifyContent": "center",
+          "position": "absolute",
+          "width": 55,
+        }
+      }
+    >
+      <ActivityIndicator
+        color="#334FFA"
+      />
+    </View>
+    <Image
+      onLoadEnd={[Function]}
+      source={
+        {
+          "uri": "https://loremflickr.com/640/480/transport",
+        }
+      }
+      style={
+        {
+          "borderRadius": 10,
+          "height": 55,
+          "width": 55,
+        }
+      }
+    />
+    <View
+      style={
+        {
+          "marginLeft": 12,
+          "width": 200,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#9B9898",
+              "fontFamily": "Avenir",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "800",
+              "lineHeight": 19,
+            },
+            {
+              "color": "#000",
+              "marginVertical": 5,
+            },
+          ]
+        }
+      >
+        Handmade Metal Shoes
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "color": "#000",
+              "fontFamily": "Avenir",
+              "fontSize": 12,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+            {
+              "marginTop": 2,
+            },
+          ]
+        }
+      >
+        09 de Diciembre, 2022
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#FFF",
+              "fontFamily": "Avenir",
+              "fontSize": 16,
+              "fontStyle": "normal",
+              "fontWeight": "800",
+              "lineHeight": 22,
+            },
+            {
+              "color": "#00B833",
+            },
+          ]
+        }
+      >
+        + 
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "color": "#FFF",
+              "fontFamily": "Avenir",
+              "fontSize": 16,
+              "fontStyle": "normal",
+              "fontWeight": "800",
+              "lineHeight": 22,
+            },
+            {
+              "color": "#000",
+            },
+          ]
+        }
+      >
+        16434
+      </Text>
+      <View
+        style={
+          {
+            "alignItems": "flex-end",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#FFF",
+                "fontFamily": "Avenir",
+                "fontSize": 16,
+                "fontStyle": "normal",
+                "fontWeight": "800",
+                "lineHeight": 22,
+              },
+              {
+                "color": "#000",
+                "marginLeft": 8,
+              },
+            ]
+          }
+        >
+          &gt;
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`RowTable component should render successfully with mock movement 1`] = `
 <View
   accessibilityState={
@@ -46,7 +249,22 @@ exports[`RowTable component should render successfully with mock movement 1`] = 
       }
     }
   >
+    <View
+      style={
+        {
+          "height": 55,
+          "justifyContent": "center",
+          "position": "absolute",
+          "width": 55,
+        }
+      }
+    >
+      <ActivityIndicator
+        color="#334FFA"
+      />
+    </View>
     <Image
+      onLoadEnd={[Function]}
       source={
         {
           "uri": "https://loremflickr.com/640/480/transport",
@@ -234,7 +452,22 @@ exports[`RowTable component should render successfully with mock movement and is
       }
     }
   >
+    <View
+      style={
+        {
+          "height": 55,
+          "justifyContent": "center",
+          "position": "absolute",
+          "width": 55,
+        }
+      }
+    >
+      <ActivityIndicator
+        color="#334FFA"
+      />
+    </View>
     <Image
+      onLoadEnd={[Function]}
       source={
         {
           "uri": "https://loremflickr.com/640/480/transport",

@@ -211,7 +211,22 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
                   }
                 }
               >
+                <View
+                  style={
+                    {
+                      "height": 55,
+                      "justifyContent": "center",
+                      "position": "absolute",
+                      "width": 55,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#334FFA"
+                  />
+                </View>
                 <Image
+                  onLoadEnd={[Function]}
                   source={
                     {
                       "uri": "https://loremflickr.com/640/480/transport",
@@ -396,7 +411,22 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
                   }
                 }
               >
+                <View
+                  style={
+                    {
+                      "height": 55,
+                      "justifyContent": "center",
+                      "position": "absolute",
+                      "width": 55,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#334FFA"
+                  />
+                </View>
                 <Image
+                  onLoadEnd={[Function]}
                   source={
                     {
                       "uri": "https://loremflickr.com/640/480/technics",
@@ -581,7 +611,22 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
                   }
                 }
               >
+                <View
+                  style={
+                    {
+                      "height": 55,
+                      "justifyContent": "center",
+                      "position": "absolute",
+                      "width": 55,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#334FFA"
+                  />
+                </View>
                 <Image
+                  onLoadEnd={[Function]}
                   source={
                     {
                       "uri": "https://loremflickr.com/640/480/technics",
@@ -766,7 +811,22 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
                   }
                 }
               >
+                <View
+                  style={
+                    {
+                      "height": 55,
+                      "justifyContent": "center",
+                      "position": "absolute",
+                      "width": 55,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#334FFA"
+                  />
+                </View>
                 <Image
+                  onLoadEnd={[Function]}
                   source={
                     {
                       "uri": "https://loremflickr.com/640/480/city",
@@ -961,7 +1021,7 @@ exports[`HomeScreen screen should render successfully with mock params Android 1
             testID="touchableGanados"
           >
             <Text>
-              Ganadados
+              Ganados
             </Text>
           </View>
           <View
@@ -1221,7 +1281,22 @@ exports[`HomeScreen screen should render successfully with mock params IOS 1`] =
                   }
                 }
               >
+                <View
+                  style={
+                    {
+                      "height": 55,
+                      "justifyContent": "center",
+                      "position": "absolute",
+                      "width": 55,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#334FFA"
+                  />
+                </View>
                 <Image
+                  onLoadEnd={[Function]}
                   source={
                     {
                       "uri": "https://loremflickr.com/640/480/transport",
@@ -1406,7 +1481,22 @@ exports[`HomeScreen screen should render successfully with mock params IOS 1`] =
                   }
                 }
               >
+                <View
+                  style={
+                    {
+                      "height": 55,
+                      "justifyContent": "center",
+                      "position": "absolute",
+                      "width": 55,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#334FFA"
+                  />
+                </View>
                 <Image
+                  onLoadEnd={[Function]}
                   source={
                     {
                       "uri": "https://loremflickr.com/640/480/technics",
@@ -1591,7 +1681,22 @@ exports[`HomeScreen screen should render successfully with mock params IOS 1`] =
                   }
                 }
               >
+                <View
+                  style={
+                    {
+                      "height": 55,
+                      "justifyContent": "center",
+                      "position": "absolute",
+                      "width": 55,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#334FFA"
+                  />
+                </View>
                 <Image
+                  onLoadEnd={[Function]}
                   source={
                     {
                       "uri": "https://loremflickr.com/640/480/technics",
@@ -1776,7 +1881,22 @@ exports[`HomeScreen screen should render successfully with mock params IOS 1`] =
                   }
                 }
               >
+                <View
+                  style={
+                    {
+                      "height": 55,
+                      "justifyContent": "center",
+                      "position": "absolute",
+                      "width": 55,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#334FFA"
+                  />
+                </View>
                 <Image
+                  onLoadEnd={[Function]}
                   source={
                     {
                       "uri": "https://loremflickr.com/640/480/city",
@@ -1971,7 +2091,7 @@ exports[`HomeScreen screen should render successfully with mock params IOS 1`] =
             testID="touchableGanados"
           >
             <Text>
-              Ganadados
+              Ganados
             </Text>
           </View>
           <View
