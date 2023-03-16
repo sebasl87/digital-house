@@ -13,7 +13,23 @@ exports[`ProductDetail screen should render successfully with mock params 1`] = 
     <View
       style={{}}
     >
+      <View
+        style={
+          {
+            "height": 350,
+            "justifyContent": "center",
+            "position": "absolute",
+            "width": "100%",
+          }
+        }
+      >
+        <ActivityIndicator
+          color="#334FFA"
+          size="large"
+        />
+      </View>
       <Image
+        onLoadEnd={[Function]}
         source={
           {
             "uri": "https://loremflickr.com/640/480/transport",
